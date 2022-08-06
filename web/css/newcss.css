@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2022/7/17, 下午 03:51:37
+    Author     : user
+*/
+*{
+    color: #6b6b6b;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header__nav, .header__subMenu, .menu{
+    display: inline-flex;
+}
+.mobiemenu{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav{
+    align-items: center;
+}
+
+.header__logo{
+    width: 120px;
+    margin: 0 25px;
+}
+
+.logo{
+    width: 100%;
+}
+
+.menu__item{
+    border-left: 2px dotted #dedede;
+    padding: 0 20px;
+}
+
+.header__subMenu-member, .header__subMenu-cart, .header__mobileBtn{
+    width: 120px; 
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, #28bac3 0%, #16b48c 100%);
+}
+
+.header__subMenu-cart {
+    background-image: linear-gradient(-45deg, #086dda 0%, #005bac 100%);
+}
+
+.text--white {
+    color: #fff;
+}
+
+@media (min-width: 769px) {
+    .pc-none {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 60px;
+    }
+    .mb-none {
+        display: none;
+    }
+    .header__mobileBtn, .header__subMenu-cart{
+        width: 60px;
+        height: 60px;
+    }
+   
+} 
